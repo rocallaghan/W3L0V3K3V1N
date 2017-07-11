@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@section scripts_head
+{
+    <script src="~/Scripts/angular/homepage.js"></script>
+}
+
+<style>
+    #myContainer {
+        width: 1000px;
+        height: 600px;
+        position: center;
+    }
+   
+     #myAnimation {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+}
+</style>
+
+<div ng-controller="HomePageController">
+    <div id="myContainer" style="text-align:center; margin-top:60px">
+        <img id="myAnimation" src="~/assets/images/kevihead.jpg">
+    </div>
+    <div style="text-align:center; margin-bottom:20px">
+        <h2>Welcome To W3L0V3K3V1N Your Primary Source Of Kevin</h2>
+    </div>
+    <div style="text-align:center">
+        <button class="btn btn-success">SoundBoard</button>
+        <button class="btn btn-warning">Tile Game</button>
+        <button class="btn btn-danger">Pin a Dick</button>
+    </div>
+</div>
+
+
+<script>
+
+  window.onload = function myMove() {
+  var elem = document.getElementById("myAnimation");
+  var pos = 50;
+  var id = setInterval(frame, 5);
+  function frame() {
+      if (pos == 1400) {
+          pos = 50;
+      } else {
+          pos++;         
+          elem.style.left = pos + 'px'; 
+      }  
+  }
+}
+</script>
