@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "SoundBoard";
+}
+@section scripts_head
+{
+    <script src="~/Scripts/angular/soundboard.js"></script>
+}
+
+
+<style>
+    .spread{
+        margin-left: 20px;
+        min-height: 50px;
+        min-width: 150px;
+    }
+</style>
+<div ng-app="kevinfoleyApp" ng-controller="SoundBoardController">
+    <div>
+        <div style="text-align:center">
+            <h2>SoundBoard</h2>
+        </div>
+        <div style="text-align:center;margin-top:50px">
+            <div style="margin-bottom:40px">
+                <button ng-click="playAudio()" class="btn btn-rounded btn-success spread">Swang</button>
+                <button ng-click="playAudio()" class="btn btn-rounded btn-success spread">2</button>
+                <button ng-click="playAudio()" class="btn btn-rounded btn-success spread">3</button>
+                <button ng-click="playAudio()" class="btn btn-rounded btn-success spread">4</button>
+            </div>
+            <div style="margin-bottom:40px">
+                <button ng-click="playAudio()" class="btn btn-rounded btn-success spread">1</button>
+                <button ng-click="playAudio()" class="btn btn-rounded btn-success spread">2</button>
+                <button ng-click="playAudio()" class="btn btn-rounded btn-success spread">3</button>
+                <button ng-click="playAudio()" class="btn btn-rounded btn-success spread">4</button>
+            </div>
+            <div style="margin-bottom:40px">
+                <button ng-click="playAudio()" class="btn btn-rounded btn-success spread">1</button>
+                <button ng-click="playAudio()" class="btn btn-rounded btn-success spread">2</button>
+                <button ng-click="playAudio()" class="btn btn-rounded btn-success spread">3</button>
+                <button ng-click="playAudio()" class="btn btn-rounded btn-success spread">4</button>
+            </div>
+            <div style="margin-bottom:40px">
+                <button ng-click="playAudio()" class="btn btn-rounded btn-success spread">1</button>
+                <button ng-click="playAudio()" class="btn btn-rounded btn-success spread">2</button>
+                <button ng-click="playAudio()" class="btn btn-rounded btn-success spread">3</button>
+                <button ng-click="playAudio()" class="btn btn-rounded btn-success spread">4</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,5 +1,5 @@
 ﻿// Define the 'storeDetailApp' 
-var kevinfoleyapp = angular.module('kevinfoleyApp', ['ui.bootstrap', 'ui.grid', 'ui.grid.pagination', 'ui.grid.resizeColumns', 'ngSanitize', 'ui.select', 'angular-advanced-searchbox', 'xeditable']);
+var kevinfoleyapp = angular.module('kevinfoleyApp', []);
 
 // Define the `PhoneListController` controller on the `phonecatApp` module
 kevinfoleyapp.controller('HomePageController', function HomePageController($scope, $http, $timeout, $window, $filter) {

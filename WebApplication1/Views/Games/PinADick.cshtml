@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "PinADick";
+}
+<style>
+    .overlays{
+    position:absolute;
+    max-width:50px;
+    max-height:50px;
+}
+</style>
+<div>
+    <div style="text-align:center"><h2>Pin A Dick On Kevin!</h2></div>
+</div>
+<div style="text-align:center">
+    <img style="min-height:500px; min-width:500px" id="kevshead" onclick="showCoords(event)" src="~/assets/images/kevinhead.png" />
+</div>
+
+<script>
+function showCoords(event) {
+    var x = event.clientX;
+    var y = event.clientY;
+    var coords = "X coords: " + x + ", Y coords: " + y;
+        // myImage : ID of image on which to place new image
+        var image = document.getElementById('kevshead');
+        console.log(image.width);
+        margin = 20;
+        l = image.offsetLeft;
+        t = image.offsetTop;
+        w = image.width;
+        h = image.height;
+    
+        y = y ;
+        // Location inside the image    
+        var newImage = document.createElement("img");
+        newImage.setAttribute('src', '/assets/images/kevinhead.png');
+        newImage.setAttribute('class', 'overlays');
+        newImage.style.left = x + "px";
+        newImage.style.top = y + "px";
+        document.body.appendChild(newImage);
+    }
+</script>
